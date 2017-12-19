@@ -1,6 +1,6 @@
 <?php
 
-namespace ShopUI;
+namespace QuiverlyRivalry;
 
 # Main
 use pocketmine\{Player, Server};
@@ -22,7 +22,7 @@ use pocketmine\event\player\{PlayerMoveEvent, PlayerJoinEvent, PlayerQuitEvent, 
 use jojoe77777\FormAPI;
 use onebone\economyapi\EconomyAPI;
 
-class ShopUI extends PluginBase implements Listener{
+class QuiverlyRivalry extends PluginBase implements Listener{
 
     public $nomoney = TextFormat::RED . "you do not have enough money!";
 
