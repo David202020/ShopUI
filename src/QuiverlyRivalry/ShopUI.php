@@ -1,6 +1,6 @@
 <?php
 
-namespace QuiverlyRivalry;
+namespace ShopUI;
 
 # Main
 use pocketmine\{Player, Server};
@@ -22,12 +22,12 @@ use pocketmine\event\player\{PlayerMoveEvent, PlayerJoinEvent, PlayerQuitEvent, 
 use jojoe77777\FormAPI;
 use onebone\economyapi\EconomyAPI;
 
-class QuiverlyRivalry extends PluginBase implements Listener{
+class ShopUI extends PluginBase implements Listener{
 
     public $nomoney = TextFormat::RED . "you do not have enough money!";
 
     public function onEnable(){
-        $this->getLogger()->info("ShopUI by Quiverly! Remember I am a developer for hire!");
+        $this->getLogger()->info("ShopUI! Enabled!");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
 
@@ -72,7 +72,7 @@ class QuiverlyRivalry extends PluginBase implements Listener{
                     return;
             }
         });
-        $form->setTitle(TextFormat::WHITE . "--= " . TextFormat::BOLD . TextFormat::GREEN . "CastleRaid" . TextFormat::RESET . TextFormat::WHITE . " =--");
+        $form->setTitle(TextFormat::WHITE . "--= " . TextFormat::BOLD . TextFormat::GREEN . "WitheredFactions" . TextFormat::RESET . TextFormat::WHITE . " =--");
         $name = $player->getName();
         $eco = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
         $money = $eco->myMoney($name);
