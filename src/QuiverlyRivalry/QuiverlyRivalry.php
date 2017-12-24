@@ -93,50 +93,50 @@ class QuiverlyRivalry extends PluginBase implements Listener{
                     break;
                 case 1:
                     $money = EconomyAPI::getInstance()->myMoney($player->getName());
-                    if ($money >= 2500) {
+                    if ($money >= 2000) {
                         $this->itemId = 268;
                         $player->getInventory()->addItem(Item::get($this->itemId, 0, 1));
-                        EconomyAPI::getInstance()->reduceMoney($player, 2500);
+                        EconomyAPI::getInstance()->reduceMoney($player, 2000);
                     }else{
                         $player->sendMessage("You Don't Have Enough Money.");
                     }
                     break;
                 case 2:
                     $money = EconomyAPI::getInstance()->myMoney($player->getName());
-                    if ($money >= 5000) {
+                    if ($money >= 3500) {
                         $this->itemId = 272;
                         $player->getInventory()->addItem(Item::get($this->itemId, 0, 1));
-                        EconomyAPI::getInstance()->reduceMoney($player, 5000);
+                        EconomyAPI::getInstance()->reduceMoney($player, 3500);
                     }else{
                         $player->sendMessage("You Don't Have Enough Money.");
                     }
                     break;
                 case 3:
                     $money = EconomyAPI::getInstance()->myMoney($player->getName());
-                    if ($money >= 10000) {
+                    if ($money >= 8500) {
                         $this->itemId = 267;
                         $player->getInventory()->addItem(Item::get($this->itemId, 0, 1));
-                        EconomyAPI::getInstance()->reduceMoney($player, 10000);
+                        EconomyAPI::getInstance()->reduceMoney($player, 8500);
                     }else{
                         $player->sendMessage("You Don't Have Enough Money.");
                     }
                     break;
                 case 4:
                     $money = EconomyAPI::getInstance()->myMoney($player->getName());
-                    if ($money >= 15000) {
+                    if ($money >= 10000) {
                         $this->itemId = 283;
                         $player->getInventory()->addItem(Item::get($this->itemId, 0, 1));
-                        EconomyAPI::getInstance()->reduceMoney($player, 15000);
+                        EconomyAPI::getInstance()->reduceMoney($player, 10000);
                     }else{
                         $player->sendMessage("You Don't Have Enough Money.");
                     }
                     break;
                 case 5:
                     $money = EconomyAPI::getInstance()->myMoney($player->getName());
-                    if ($money >= 25000) {
+                    if ($money >= 15000) {
                         $this->itemId = 276;
                         $player->getInventory()->addItem(Item::get($this->itemId, 0, 1));
-                        EconomyAPI::getInstance()->reduceMoney($player, 25000);
+                        EconomyAPI::getInstance()->reduceMoney($player, 15000);
                     }else{
                         $player->sendMessage("You Don't Have Enough Money.");
                     }
@@ -170,10 +170,10 @@ class QuiverlyRivalry extends PluginBase implements Listener{
         $form->setContent("Your Money: " . $money);
         $form->addButton("Back, to main menu!");
         $form->addButton("Wooden Sword: $2500", 0, "textures/items/wood_sword");
-        $form->addButton("Stone Sword : $5000", 0, "textures/items/stone_sword");
-        $form->addButton("Golden Sword : $10000", 0, "textures/items/gold_sword");
-        $form->addButton("Iron Sword : $15000", 0, "textures/items/iron_sword");
-        $form->addButton("Diamond Sword : $25000", 0, "textures/items/diamond_sword");
+        $form->addButton("Stone Sword : $3000", 0, "textures/items/stone_sword");
+        $form->addButton("Golden Sword : $5000", 0, "textures/items/gold_sword");
+        $form->addButton("Iron Sword : $10000", 0, "textures/items/iron_sword");
+        $form->addButton("Diamond Sword : $15000", 0, "textures/items/diamond_sword");
         $form->addButton("Bow : $2000", 0, "textures/items/bow_standby");
         $form->addButton("Arrows(64x) : $3000", 0, "textures/items/arrow");
         $form->sendToPlayer($player);
@@ -191,30 +191,30 @@ class QuiverlyRivalry extends PluginBase implements Listener{
                     break;
                 case 1:
                     $money = EconomyAPI::getInstance()->myMoney($player->getName());
-                    if ($money >= 25000) {
-                        $this->itemId = 278;
-                        $player->getInventory()->addItem(Item::get($this->itemId, 0, 1));
-                        EconomyAPI::getInstance()->reduceMoney($player, 25000);
-                    }else{
-                        $player->sendMessage("You Don't Have Enough Money.");
-                    }
-                    break;
-                case 2:
-                    $money = EconomyAPI::getInstance()->myMoney($player->getName());
                     if ($money >= 15000) {
-                        $this->itemId = 285;
+                        $this->itemId = 278;
                         $player->getInventory()->addItem(Item::get($this->itemId, 0, 1));
                         EconomyAPI::getInstance()->reduceMoney($player, 15000);
                     }else{
                         $player->sendMessage("You Don't Have Enough Money.");
                     }
                     break;
+                case 2:
+                    $money = EconomyAPI::getInstance()->myMoney($player->getName());
+                    if ($money >= 10000) {
+                        $this->itemId = 285;
+                        $player->getInventory()->addItem(Item::get($this->itemId, 0, 1));
+                        EconomyAPI::getInstance()->reduceMoney($player, 10000);
+                    }else{
+                        $player->sendMessage("You Don't Have Enough Money.");
+                    }
+                    break;
                 case 3:
                     $money = EconomyAPI::getInstance()->myMoney($player->getName());
-                    if ($money >= 20000) {
+                    if ($money >= 5000) {
                         $this->itemId = 257;
                         $player->getInventory()->addItem(Item::get($this->itemId, 0, 1));
-                        EconomyAPI::getInstance()->reduceMoney($player, 20000);
+                        EconomyAPI::getInstance()->reduceMoney($player, 5000);
                     }else{
                         $player->sendMessage("You Don't Have Enough Money.");
                     }
