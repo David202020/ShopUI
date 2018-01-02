@@ -72,7 +72,7 @@ class QuiverlyRivalry extends PluginBase implements Listener{
                     return;
             }
         });
-        $form->setTitle(TextFormat::WHITE . "--= " . TextFormat::BOLD . TextFormat::GREEN . "WitheredFactions" . TextFormat::RESET . TextFormat::WHITE . " =--");
+        $form->setTitle(TextFormat::WHITE . "--= " . TextFormat::BOLD . TextFormat::GREEN . "MysticRaid" . TextFormat::RESET . TextFormat::WHITE . " =--");
         $name = $player->getName();
         $eco = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
         $money = $eco->myMoney($name);
